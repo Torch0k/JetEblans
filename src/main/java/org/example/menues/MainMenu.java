@@ -21,8 +21,9 @@ public class MainMenu extends JFrame {
         JButton startButton = new JButton("старт");
         JButton exitButton = new JButton("выйти");
 
+//размер кнопок
+        Dimension buttonSize = new Dimension(100, 50);
 
-        Dimension buttonSize = new Dimension(100, 50); //размер кнопок
         startButton.setPreferredSize(buttonSize);
         exitButton.setPreferredSize(buttonSize);
         //прослушка кнопок
@@ -33,7 +34,8 @@ public class MainMenu extends JFrame {
 
         JPanel panel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(10, 10, 10, 10); // отступы между кнопками
+        // отступы между кнопками
+        gbc.insets = new Insets(10, 10, 10, 10);
 
         gbc.gridx = 0;
         gbc.gridy = 0;
